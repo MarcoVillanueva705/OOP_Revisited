@@ -8,13 +8,11 @@ namespace LearningCollections
         static void Main(string[] args)
         {
             //instantiate a new Student Class object
-            var student = new Student();
+            var students = new List <Student>();
             //to access the Name property, specify the object variable name
             //use the dot operator after specifying the object variable name
             //to access the Name property
-            student.Name = "Kanagroo";
-            var studentNames = new List<string>();
-            var studentGrades = new List<int>();
+            
 
             //boolean that means in this while loop, all code will
             //continue to happen in it until reaching a false condition
@@ -22,8 +20,10 @@ namespace LearningCollections
 
             while (adding)
             {
+                var newStudent = new Student();
+
                 Console.Write("Student Name...");
-                studentNames.Add(Console.ReadLine());
+                newStudent.Name = (Console.ReadLine());
 
                 Console.Write("Student Grade...");
                 studentGrades.Add(int.Parse(Console.ReadLine()));
@@ -47,6 +47,7 @@ namespace LearningCollections
         }
         //class acts like a blueprint for making an object; use instead of separate lists
         //to scale down code
+    }
         class Student
         {
             //public keyword makes properties useable by another class
@@ -57,5 +58,4 @@ namespace LearningCollections
             public string Address;
             public int Phone;
         }
-    }
 }
