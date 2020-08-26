@@ -7,6 +7,12 @@ namespace LearningCollections
     {
         static void Main(string[] args)
         {
+            //instantiate a new Student Class object
+            var student = new Student();
+            //to access the Name property, specify the object variable name
+            //use the dot operator after specifying the object variable name
+            //to access the Name property
+            student.Name = "Kanagroo";
             var studentNames = new List<string>();
             var studentGrades = new List<int>();
 
@@ -39,9 +45,11 @@ namespace LearningCollections
                 }
             }
         }
+        //class acts like a blueprint for making an object; use instead of separate lists
+        //to scale down code
         class Student
         {
-            //public accessor makes properties useable by another class
+            //public keyword makes properties useable by another class
             //in this instance, the Program class can use these props
             public string Name;
             public int Grade;
