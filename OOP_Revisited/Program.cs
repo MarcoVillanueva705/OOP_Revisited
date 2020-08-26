@@ -39,5 +39,15 @@ namespace LearningCollections
                 }
             }
         }
+        class Student
+        {
+            //public accessor makes properties useable by another class
+            //in this instance, the Program class can use these props
+            public string Name;
+            public int Grade;
+            public string Birthday;
+            public string Address;
+            public int Phone;
+        }
     }
 }
