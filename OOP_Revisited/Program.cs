@@ -70,5 +70,9 @@ namespace LearningCollections
             public string Birthday;
             public string Address;
             public int Phone;
+        //var keyword outside of class allows C# to pick the correct type (local var)
+        //we can't use var in our class; we are defining a blueprint with our class Student
+        //future objects, we will want to make or instantiate i.e. var student = new Student();
+        //blueprints need to have every detail defined; must specify what type each property will be
         }
 }
