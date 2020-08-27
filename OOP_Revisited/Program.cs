@@ -28,6 +28,16 @@ namespace LearningCollections
                 Console.Write("Student Grade...");
                 newStudent.Grade = (int.Parse(Console.ReadLine()));
 
+                Console.Write("Student Birthday...");
+                newStudent.Birthday = (Console.ReadLine());
+
+                Console.Write("Student Address...");
+                newStudent.Address = (Console.ReadLine());
+
+                //data type for phone# (and grade) in Class property is int
+                Console.Write("Student Phone...");
+                newStudent.Phone = (int.Parse(Console.ReadLine()));
+
                 //add a newStudent to the List <Student> collection
                 students.Add(newStudent);
 
