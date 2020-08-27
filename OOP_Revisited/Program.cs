@@ -28,7 +28,7 @@ namespace LearningCollections
                 Console.Write("Student Grade...");
                 newStudent.Grade = (int.Parse(Console.ReadLine()));
 
-                //add a newStudent to the List <Student> object
+                //add a newStudent to the List <Student> collection
                 students.Add(newStudent);
 
                 Console.Write("Add another student? y/n");
@@ -40,11 +40,11 @@ namespace LearningCollections
                     adding = false;
                 }
 
-                for (int i = 0; i < studentNames.Count; i++)
+                foreach (var student in students)
                 {
-                    //Name is obj arg 0 as string(studentNames), and Grade is obj arg 1 as int(studentGrades)
+                    //Name is obj arg 0 as string(student.Name), and Grade is obj arg 1 as int(student.Grade)
                     //parameters arr[i] lists the data from the loop
-                    Console.WriteLine("Name: {0}, Grade: {1}", studentNames[i], studentGrades[i]);
+                    Console.WriteLine("Name: {0}, Grade: {1}", student.Name, student.Grade);
                 }
             }
         }
