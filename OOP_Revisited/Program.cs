@@ -26,7 +26,10 @@ namespace LearningCollections
                 newStudent.Name = (Console.ReadLine());
 
                 Console.Write("Student Grade...");
-                studentGrades.Add(int.Parse(Console.ReadLine()));
+                newStudent.Grade = (int.Parse(Console.ReadLine()));
+
+                //add a newStudent to the List <Student> object
+                students.Add(newStudent);
 
                 Console.Write("Add another student? y/n");
 
