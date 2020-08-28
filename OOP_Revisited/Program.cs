@@ -74,5 +74,8 @@ namespace LearningCollections
         //we can't use var in our class; we are defining a blueprint with our class Student
         //future objects, we will want to make or instantiate i.e. var student = new Student();
         //blueprints need to have every detail defined; must specify what type each property will be
+        //so we can guarantee objects of that class match the blueprint exactly
+        //this is a C# concept called 'type safety'
+        //this enforces the type of data we use in specific variable types
         }
 }
