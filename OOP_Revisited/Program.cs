@@ -60,6 +60,7 @@ namespace LearningCollections
         }
         //class acts like a blueprint for making an object; use instead of separate lists
         //to scale down code
+        //taking notes for PluralSight C# OOP course
     }
         class Student
         {
